@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO On-page: Título y Meta Descripciones Optimizados -->
+    <title>ReparacionesMasterPC | Asesoría en Mantenimiento de Computadoras</title>
+    <meta name="description" content="Asesoría informativa y diagnóstico teórico para el mantenimiento de computadoras en Rio Viejo, Colombia. Aprende a optimizar tu PC de la mano de expertos.">
+    <meta name="keywords" content="asesoría computadoras, mantenimiento preventivo PC, guías de optimización, diagnóstico de software, Rio Viejo, Mersy Yulier Mejia Poveda">
+    <meta name="author" content="Mersy Yulier Mejia Poveda">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO Técnico: Schema.org LocalBusiness & ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "ReparacionesMasterPC",
+      "description": "Servicios de asesoría informativa y consultoría teórica sobre mantenimiento y reparación de computadoras.",
+      "image": "https://via.placeholder.com/1200x800?text=ReparacionesMasterPC",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 6 # 14-41",
+        "addressLocality": "Rio Viejo",
+        "addressCountry": "CO"
+      },
+      "telephone": "+573005678976",
+      "email": "juiicysworld@gmail.com",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+    <!-- Preconexión a fuentes para velocidad de carga (SEO Técnico) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variables y Reset para un diseño consistente y rápido */
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --border-color: #e2e8f0;
+            --transition: all 0.3s ease-in-out;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-light); color: var(--text-main); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* Navegación */
+        .navbar {
+            position: fixed;
+            top: 0; width: 100%;
+            background: var(--bg-white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+        }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
+        .logo span { color: var(--accent-color); }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { font-weight: 600; color: var(--text-main); transition: var(--transition); }
+        .nav-links a:hover { color: var(--accent-color); }
+        .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; border: none; background: none; }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        .btn-primary { background: var(--accent-color); color: var(--bg-white); box-shadow: 0 4px 6px rgba(59, 130, 246, 0.25); }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+
+        /* Secciones */
+        section { padding: 5rem 5%; }
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 1rem; }
+        .section-title p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+
+        /* Hero */
+        .hero {
+            margin-top: 60px;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            gap: 2rem;
+        }
+        .hero-content { flex: 1; max-width: 600px; }
+        .hero-badge { display: inline-block; background: rgba(59, 130, 246, 0.1); color: var(--accent-color); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem; }
+        .hero h1 { font-size: 3rem; color: var(--primary-color); line-height: 1.2; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem; }
+        .hero-image { flex: 1; background: var(--bg-white); border-radius: 12px; height: 400px; display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border: 1px solid var(--border-color); }
+
+        /* Beneficios */
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .benefit-card { background: var(--bg-white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-top: 4px solid var(--accent-color); transition: var(--transition); }
+        .benefit-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.05); }
+        .benefit-icon { font-size: 2rem; margin-bottom: 1rem; color: var(--accent-color); }
+        .benefit-card h3 { color: var(--primary-color); margin-bottom: 1rem; }
+
+        /* Propuesta de Valor */
+        .services { background: var(--bg-white); }
+        .services-container { display: flex; flex-direction: column; gap: 3rem; max-width: 800px; margin: 0 auto; }
+        .service-item { display: flex; gap: 2rem; align-items: flex-start; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color); }
+        .service-item:last-child { border-bottom: none; }
+        .service-number { font-size: 3rem; font-weight: 800; color: #eff6ff; -webkit-text-stroke: 1px var(--accent-color); }
+
+        /* Prueba Social (Basada en métricas de educación, sin testimonios falsos) */
+        .social-proof { background: var(--primary-color); color: var(--bg-white); text-align: center; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .metric h4 { font-size: 2.5rem; color: var(--accent-color); margin-bottom: 0.5rem; }
+        .metric p { font-size: 1rem; opacity: 0.9; }
+
+        /* Contacto y Transparencia */
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; background: var(--bg-white); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        .company-info { background: #f8fafc; padding: 3rem; border-right: 1px solid var(--border-color); }
+        .info-block { margin-bottom: 1.5rem; }
+        .info-block strong { display: block; color: var(--primary-color); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .contact-form { padding: 3rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-control { width: 100%; padding: 0.8rem; border: 1px solid var(--border-color); border-radius: 6px; font-size: 1rem; transition: var(--transition); }
+        .form-control:focus { outline: none; border-color: var(--accent-color); box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        textarea.form-control { resize: vertical; min-height: 100px; }
+        .form-notice { font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; text-align: center; }
+        .success-msg { display: none; background: #dcfce7; color: #166534; padding: 1rem; border-radius: 6px; margin-top: 1rem; text-align: center; font-weight: 600; }
+
+        /* Footer */
+        footer { background: var(--primary-color); color: var(--bg-white); padding: 3rem 5% 1rem; }
+        .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 2rem; }
+        .footer-legal { text-align: center; font-size: 0.875rem; color: #94a3b8; }
+        .footer-links a { color: #cbd5e1; margin-right: 1rem; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--accent-color); }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero, .contact-layout { grid-template-columns: 1fr; flex-direction: column; }
+            .hero h1 { font-size: 2.2rem; }
+            .company-info { border-right: none; border-bottom: 1px solid var(--border-color); }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--bg-white); padding: 1rem 5%; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+            .nav-links.active { display: flex; }
+            .menu-toggle { display: block; }
+            section { padding: 3rem 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">Reparaciones<span>MasterPC</span></div>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">☰</button>
+        <div class="nav-links" id="nav-menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#beneficios">Por qué aprender</a>
+            <a href="#asesoria">Temario de Asesoría</a>
+            <a href="#contacto">Solicitar Diagnóstico</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Servicio Estrictamente Informativo</span>
+            <h1>Asesoría Profesional en <br><span style="color: var(--accent-color);">Mantenimiento de PC</span></h1>
+            <p>Conoce a fondo el estado de tu computadora. Te brindamos guías teóricas, diagnósticos informativos y consultoría paso a paso para que entiendas cómo optimizar tu equipo, previniendo fallos y mejorando su rendimiento sin conocimientos técnicos previos.</p>
+            <a href="#contacto" class="btn btn-primary">Reserva tu asesoría de diagnóstico</a>
+        </div>
+        <div class="hero-image">
+            <span style="color: var(--text-light); text-align: center; padding: 2rem;">
+                [Espacio optimizado para imagen ilustrativa de análisis de hardware/software. <br>Carga diferida para SEO Técnico]
+            </span>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios">
+        <div class="section-title">
+            <h2>El Valor de un Diagnóstico Preciso</h2>
+            <p>Entender cómo funciona el mantenimiento preventivo te ahorra tiempo y recursos a largo plazo.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🛡️</div>
+                <h3>Prevención de Riesgos</h3>
+                <p>Aprende a identificar señales de alerta temprana en tu disco duro y memoria RAM antes de que ocurra una pérdida crítica de datos.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h3>Optimización Teórica</h3>
+                <p>Te enseñamos cuáles son los procesos en segundo plano y programas de inicio que consumen recursos, para que retomes el control de tu sistema.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💡</div>
+                <h3>Decisiones Informadas</h3>
+                <p>Recibe orientación neutral sobre si tu equipo realmente necesita una actualización de componentes o si basta con un mantenimiento de software.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor (Servicios Informativos) -->
+    <section id="asesoria" class="services">
+        <div class="section-title">
+            <h2>Nuestra Metodología de Consultoría</h2>
+            <p>Estructuramos nuestras asesorías en tres fases clave para asegurar la máxima comprensión y transparencia.</p>
+        </div>
+        <div class="services-container">
+            <div class="service-item">
+                <div class="service-number">01</div>
+                <div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Análisis Lógico del Sistema</h3>
+                    <p color: var(--text-light);>Revisamos conjuntamente los síntomas de tu equipo (lentitud, sobrecalentamiento, bloqueos). Te explicamos teóricamente las posibles causas a nivel de sistema operativo y software instalado.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">02</div>
+                <div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Guía de Mantenimiento Preventivo</h3>
+                    <p color: var(--text-light);>Desarrollamos un plan de acción educativo. Te indicamos las mejores prácticas para la limpieza de archivos temporales, gestión de almacenamiento y control de temperaturas.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">03</div>
+                <div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Educación en Seguridad Básica</h3>
+                    <p color: var(--text-light);>Consultoría sobre la importancia de las copias de seguridad (backups), actualización de parches de seguridad y navegación segura para evitar malware común.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prueba Social (Métricas de impacto) -->
+    <section class="social-proof">
+        <h2>Impulsando la cultura del cuidado tecnológico</h2>
+        <p style="max-width: 600px; margin: 1rem auto; opacity: 0.9;">Nuestra meta es empoderar a los usuarios mediante el conocimiento técnico estructurado y accesible.</p>
+        <div class="metrics-grid">
+            <div class="metric">
+                <h4>+ Enfoque</h4>
+                <p>100% Pedagógico</p>
+            </div>
+            <div class="metric">
+                <h4>Transparencia</h4>
+                <p>Sin promesas engañosas</p>
+            </div>
+            <div class="metric">
+                <h4>Atención</h4>
+                <p>Personalizada y continua</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario y Transparencia -->
+    <section id="contacto">
+        <div class="section-title">
+            <h2>Coordina tu Espacio de Asesoría</h2>
+            <p>Déjanos tus datos y nos pondremos en contacto para agendar una sesión de análisis técnico.</p>
+        </div>
+        <div class="contact-layout">
+            <div class="company-info">
+                <h3 style="margin-bottom: 2rem; color: var(--primary-color);">Datos de Transparencia</h3>
+                <div class="info-block">
+                    <strong>Responsable Principal</strong>
+                    <span>Mersy Yulier Mejia Poveda</span>
+                </div>
+                <div class="info-block">
+                    <strong>Ubicación Geográfica</strong>
+                    <span>Cl. 6 # 14-41<br>Rio Viejo, Colombia</span>
+                </div>
+                <div class="info-block">
+                    <strong>Horario de Recepción</strong>
+                    <span>Lunes a Domingo<br>08:00 am - 05:00 pm</span>
+                </div>
+                <div class="info-block">
+                    <strong>Contacto Directo</strong>
+                    <span>3005678976<br>juiicysworld@gmail.com</span>
+                </div>
+                <div style="margin-top: 2rem; padding: 1rem; background: #e0f2fe; border-radius: 6px; font-size: 0.9rem; color: #0369a1;">
+                    <strong>Nota Importante:</strong> Toda consulta tiene fines educativos. No solicitamos acceso remoto no autorizado ni contraseñas bancarias bajo ninguna circunstancia.
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" class="form-control" required placeholder="Ej. Carlos Mendoza">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de Contacto</label>
+                        <input type="tel" id="telefono" class="form-control" required placeholder="Tu número para agendar">
+                    </div>
+                    <div class="form-group">
+                        <label for="equipo">Tipo de Equipo</label>
+                        <select id="equipo" class="form-control" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="portatil">Computadora Portátil (Laptop)</option>
+                            <option value="escritorio">Computadora de Escritorio (PC)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sintomas">Describe brevemente el motivo de la consulta</label>
+                        <textarea id="sintomas" class="form-control" required placeholder="Ej. El equipo tarda mucho en iniciar el sistema operativo..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Reserva tu asesoría de diagnóstico</button>
+                    <p class="form-notice">Al enviar este formulario, aceptas nuestra política de privacidad y términos de uso informativo.</p>
+                    <div id="successMessage" class="success-msg">
+                        ¡Gracias! Hemos recibido tu solicitud. Mersy se comunicará contigo dentro del horario establecido.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">ReparacionesMasterPC</h3>
+                <p style="color: #cbd5e1; font-size: 0.9rem; max-width: 300px;">
+                    Portal educativo dedicado a la consultoría y asesoramiento en el mantenimiento de equipos informáticos.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4 style="margin-bottom: 1rem;">Enlaces Legales</h4>
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <br><br>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; <span id="year"></span> Editado y operado por Mersy Yulier Mejia Poveda. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem;">Este sitio cumple con las políticas de destino, garantizando un entorno libre de descargas maliciosas, pop-ups invasivos y promesas tecnológicas no verificables.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Integrado (Sin dependencias externas) -->
+    <script>
+        // Actualizar año dinámicamente
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Menú móvil responsive
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Manejo del formulario para evitar redirecciones (Cumplimiento Google Ads)
+        const form = document.getElementById('leadForm');
+        const successMsg = document.getElementById('successMessage');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita recarga de página y redirecciones extrañas
+            
+            // Estado de carga
+            submitBtn.textContent = 'Procesando solicitud...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            // Simulación de envío asíncrono
+            setTimeout(() => {
+                form.reset();
+                submitBtn.textContent = 'Reserva tu asesoría de diagnóstico';
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                successMsg.style.display = 'block';
+                
+                // Ocultar mensaje después de 7 segundos
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 7000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
